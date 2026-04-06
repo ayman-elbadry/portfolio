@@ -14,7 +14,17 @@ const app = express();
 
 // ─── MIDDLEWARE ───
 app.use(cors({
-  origin: process.env.CLIENT_URL || 'http://localhost:5173',
+  origin: function(origin, callback) {
+    const allowed = [
+      'http://localhost:5173',
+      process.env.CLIENT_URL,
+    ].filter(Boolean);
+    if (!origin || allowed.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(null, true); // Allow all for portfolio
+    }
+  },
   credentials: true,
 }));
 app.use(express.json({ limit: '10mb' }));
