@@ -12,9 +12,5 @@
     "api/index.js": {
       "includeFiles": "server/**"
     }
-  },
-  "env": {
-    "MONGODB_URI": "@mongodb-uri",
-    "JWT_SECRET": "@jwt-secret"
   }
 }
