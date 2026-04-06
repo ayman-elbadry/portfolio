@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio d'Aymane El Badry — Étudiant en Master d'Excellence en IA & Développeur Web Full Stack basé à Casablanca. Projets en Intelligence Artificielle, Machine Learning et développement web.">
+    <meta name="keywords" content="Aymane El Badry, Portfolio, IA, Intelligence Artificielle, Développeur Web, Full Stack, Machine Learning, Deep Learning, Angular, React, Laravel, .NET">
+    <meta name="author" content="Aymane El Badry">
+    <title>Aymane El Badry — Portfolio IA & Développement Web</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons (CDN) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ═══════════════ NAVBAR ═══════════════ -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>AEB<span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" class="nav-link">À propos</a></li>
+                <li><a href="#skills" class="nav-link">Compétences</a></li>
+                <li><a href="#experience" class="nav-link">Expérience</a></li>
+                <li><a href="#education" class="nav-link">Formation</a></li>
+                <li><a href="#projects" class="nav-link">Projets</a></li>
+                <li><a href="#contact" class="nav-link nav-link--cta">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ═══════════════ HERO ═══════════════ -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-grid"></div>
+        <div class="hero-glow hero-glow--purple"></div>
+        <div class="hero-glow hero-glow--blue"></div>
+
+        <div class="hero-content">
+            <div class="hero-avatar-wrapper">
+                <div class="hero-avatar-ring"></div>
+                <img src="assets/images/avatar.png" alt="Aymane El Badry" class="hero-avatar" id="heroAvatar">
+            </div>
+
+            <div class="hero-badge">
+                <span class="hero-badge-dot"></span>
+                Ouvert aux opportunités
+            </div>
+
+            <h1 class="hero-title">
+                <span class="hero-greeting">Bonjour, je suis</span>
+                <span class="hero-name">Aymane El Badry</span>
+            </h1>
+
+            <p class="hero-subtitle">
+                Étudiant en <span class="text-gradient">Master d'Excellence en IA</span> & <span class="text-gradient">Développeur Web Full Stack</span>
+            </p>
+
+            <p class="hero-description">
+                Passionné par la conception d'architectures web robustes et le développement de modèles d'Intelligence Artificielle performants. Je transforme des problèmes complexes en solutions logicielles intelligentes.
+            </p>
+
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn--primary" id="ctaProjects">
+                    <i data-lucide="folder-open"></i>
+                    Voir mes projets
+                </a>
+                <a href="#contact" class="btn btn--outline" id="ctaContact">
+                    <i data-lucide="send"></i>
+                    Me contacter
+                </a>
+            </div>
+
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <span class="hero-stat-number" data-count="6">0</span><span class="hero-stat-plus">+</span>
+                    <span class="hero-stat-label">Projets</span>
+                </div>
+                <div class="hero-stat-divider"></div>
+                <div class="hero-stat">
+                    <span class="hero-stat-number" data-count="2">0</span>
+                    <span class="hero-stat-label">Stages</span>
+                </div>
+                <div class="hero-stat-divider"></div>
+                <div class="hero-stat">
+                    <span class="hero-stat-number" data-count="10">0</span><span class="hero-stat-plus">+</span>
+                    <span class="hero-stat-label">Technologies</span>
+                </div>
+            </div>
+        </div>
+
+        <a href="#about" class="hero-scroll" aria-label="Scroll vers le bas">
+            <i data-lucide="chevrons-down"></i>
+        </a>
+    </section>
+
+    <!-- ═══════════════ ABOUT ═══════════════ -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag"><i data-lucide="user"></i> À propos</span>
+                <h2 class="section-title">Qui suis-je ?</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <p>Étudiant de <strong>21 ans</strong> basé à <strong>Casablanca, Maroc</strong>, je suis animé par une double passion :</p>
+                    <div class="about-pillars">
+                        <div class="about-pillar">
+                            <div class="about-pillar-icon">
+                                <i data-lucide="code-2"></i>
+                            </div>
+                            <div>
+                                <h3>Ingénierie Logicielle</h3>
+                                <p>Maîtrise des frameworks modernes — Angular, React, .NET et Laravel — pour concevoir des applications web performantes et scalables.</p>
+                            </div>
+                        </div>
+                        <div class="about-pillar">
+                            <div class="about-pillar-icon about-pillar-icon--ai">
+                                <i data-lucide="brain"></i>
+                            </div>
+                            <div>
+                                <h3>Intelligence Artificielle</h3>
+                                <p>Modélisation avancée en Data Science & IA — Machine Learning, Deep Learning, NLP — pour extraire de la valeur des données.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="about-traits">
+                        <span class="trait"><i data-lucide="lightbulb"></i> Curieux</span>
+                        <span class="trait"><i data-lucide="target"></i> Autonome</span>
+                        <span class="trait"><i data-lucide="puzzle"></i> Problem Solver</span>
+                        <span class="trait"><i data-lucide="users"></i> Esprit d'équipe</span>
+                    </p>
+                </div>
+
+                <div class="about-card reveal">
+                    <div class="about-card-inner">
+                        <div class="about-card-item">
+                            <i data-lucide="map-pin"></i>
+                            <div>
+                                <span class="about-card-label">Localisation</span>
+                                <span class="about-card-value">Casablanca, Maroc</span>
+                            </div>
+                        </div>
+                        <div class="about-card-item">
+                            <i data-lucide="graduation-cap"></i>
+                            <div>
+                                <span class="about-card-label">Formation</span>
+                                <span class="about-card-value">Master d'Excellence en IA</span>
+                            </div>
+                        </div>
+                        <div class="about-card-item">
+                            <i data-lucide="briefcase"></i>
+                            <div>
+                                <span class="about-card-label">Disponibilité</span>
+                                <span class="about-card-value">Stage / Alternance</span>
+                            </div>
+                        </div>
+                        <div class="about-card-item">
+                            <i data-lucide="languages"></i>
+                            <div>
+                                <span class="about-card-label">Langues</span>
+                                <span class="about-card-value">Arabe · Français · Anglais</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ SKILLS ═══════════════ -->
+    <section class="section section--alt" id="skills">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag"><i data-lucide="layers"></i> Compétences</span>
+                <h2 class="section-title">Mon arsenal technique</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="skills-grid">
+                <!-- AI & Data -->
+                <div class="skill-category reveal">
+                    <div class="skill-category-header">
+                        <div class="skill-category-icon skill-category-icon--ai">
+                            <i data-lucide="brain-circuit"></i>
+                        </div>
+                        <h3>Intelligence Artificielle & Data</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag skill-tag--ai">Machine Learning</span>
+                        <span class="skill-tag skill-tag--ai">Deep Learning</span>
+                        <span class="skill-tag skill-tag--ai">Analyse de données</span>
+                        <span class="skill-tag skill-tag--ai">NLP</span>
+                        <span class="skill-tag skill-tag--ai">Data Mining</span>
+                        <span class="skill-tag skill-tag--ai">Python</span>
+                    </div>
+                </div>
+
+                <!-- Front-end -->
+                <div class="skill-category reveal">
+                    <div class="skill-category-header">
+                        <div class="skill-category-icon skill-category-icon--front">
+                            <i data-lucide="monitor"></i>
+                        </div>
+                        <h3>Développement Front-end</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag skill-tag--front">Angular</span>
+                        <span class="skill-tag skill-tag--front">React JS</span>
+                        <span class="skill-tag skill-tag--front">HTML5</span>
+                        <span class="skill-tag skill-tag--front">CSS3</span>
+                        <span class="skill-tag skill-tag--front">JavaScript</span>
+                    </div>
+                </div>
+
+                <!-- Back-end -->
+                <div class="skill-category reveal">
+                    <div class="skill-category-header">
+                        <div class="skill-category-icon skill-category-icon--back">
+                            <i data-lucide="server"></i>
+                        </div>
+                        <h3>Développement Back-end</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag skill-tag--back">.NET</span>
+                        <span class="skill-tag skill-tag--back">Laravel</span>
+                        <span class="skill-tag skill-tag--back">PHP</span>
+                    </div>
+                </div>
+
+                <!-- Databases -->
+                <div class="skill-category reveal">
+                    <div class="skill-category-header">
+                        <div class="skill-category-icon skill-category-icon--db">
+                            <i data-lucide="database"></i>
+                        </div>
+                        <h3>Bases de données</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag skill-tag--db">MySQL</span>
+                        <span class="skill-tag skill-tag--db">MongoDB</span>
+                        <span class="skill-tag skill-tag--db">Oracle</span>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="skill-category reveal">
+                    <div class="skill-category-header">
+                        <div class="skill-category-icon skill-category-icon--tool">
+                            <i data-lucide="wrench"></i>
+                        </div>
+                        <h3>Outils & Déploiement</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag skill-tag--tool">Git</span>
+                        <span class="skill-tag skill-tag--tool">GitHub</span>
+                        <span class="skill-tag skill-tag--tool">GitLab</span>
+                        <span class="skill-tag skill-tag--tool">Docker</span>
+                    </div>
+                </div>
+
+                <!-- Languages -->
+                <div class="skill-category reveal">
+                    <div class="skill-category-header">
+                        <div class="skill-category-icon skill-category-icon--lang">
+                            <i data-lucide="globe"></i>
+                        </div>
+                        <h3>Langues</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag skill-tag--lang">Arabe <small>(Maternelle)</small></span>
+                        <span class="skill-tag skill-tag--lang">Français <small>(B2)</small></span>
+                        <span class="skill-tag skill-tag--lang">Anglais <small>(B1)</small></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ EXPERIENCE ═══════════════ -->
+    <section class="section" id="experience">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag"><i data-lucide="briefcase"></i> Expérience</span>
+                <h2 class="section-title">Parcours professionnel</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker">
+                        <i data-lucide="building-2"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Développeur Web</h3>
+                            <span class="timeline-badge">Stage — 2 mois</span>
+                        </div>
+                        <span class="timeline-company">
+                            <i data-lucide="map-pin"></i> INVOLYS — Casablanca
+                        </span>
+                        <p>Développement et maintenance d'applications web en utilisant l'écosystème <strong>.NET</strong> et <strong>Angular</strong>. Collaboration avec l'équipe de développement pour l'amélioration continue des produits.</p>
+                        <div class="timeline-tags">
+                            <span>.NET</span><span>Angular</span><span>Web</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker">
+                        <i data-lucide="building-2"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Développeur Back-end</h3>
+                            <span class="timeline-badge">Stage — 1 mois (Avril)</span>
+                        </div>
+                        <span class="timeline-company">
+                            <i data-lucide="map-pin"></i> Enduris — Casablanca
+                        </span>
+                        <p>Missions axées sur le développement back-end et la gestion des bases de données. Participation à l'optimisation des requêtes et à l'architecture serveur.</p>
+                        <div class="timeline-tags">
+                            <span>Back-end</span><span>Base de données</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ EDUCATION ═══════════════ -->
+    <section class="section section--alt" id="education">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag"><i data-lucide="graduation-cap"></i> Formation</span>
+                <h2 class="section-title">Parcours académique</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker timeline-marker--active">
+                        <i data-lucide="sparkles"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Master d'Excellence en Intelligence Artificielle</h3>
+                            <span class="timeline-badge timeline-badge--active">En cours</span>
+                        </div>
+                        <span class="timeline-company"><i data-lucide="map-pin"></i> Université — Casablanca</span>
+                        <p>Formation avancée en Intelligence Artificielle, Machine Learning, Deep Learning et traitement des données massives.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker">
+                        <i data-lucide="award"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Licence d'Excellence en Intelligence Artificielle</h3>
+                            <span class="timeline-badge">2024 — 2025</span>
+                        </div>
+                        <span class="timeline-company"><i data-lucide="map-pin"></i> Université — Casablanca</span>
+                        <p>Mention <strong>Bien</strong>. Fondamentaux de l'IA, algorithmes d'apprentissage, statistiques et programmation avancée.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker">
+                        <i data-lucide="code-2"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Technicien Spécialisé en Développement Digital</h3>
+                            <span class="timeline-badge">2022 — 2024</span>
+                        </div>
+                        <span class="timeline-company"><i data-lucide="map-pin"></i> ISTA Sidi Moumen</span>
+                        <p>Option <strong>Web Full Stack</strong>. Mention <strong>Très Bien</strong>. Formation intensive couvrant le développement front-end, back-end, bases de données et méthodologies agiles.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker">
+                        <i data-lucide="book-open"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Baccalauréat</h3>
+                            <span class="timeline-badge">2022</span>
+                        </div>
+                        <span class="timeline-company"><i data-lucide="map-pin"></i> Lycée Abdelmalek Essaadi</span>
+                        <p>Obtention du diplôme de Baccalauréat, ouvrant la voie aux études supérieures en technologie.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ PROJECTS ═══════════════ -->
+    <section class="section" id="projects">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag"><i data-lucide="folder-open"></i> Projets</span>
+                <h2 class="section-title">Mes réalisations</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="projects-filter reveal">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="ai">Intelligence Artificielle</button>
+                <button class="filter-btn" data-filter="web">Développement Web</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card reveal" data-category="ai" id="project-chatbot">
+                    <div class="project-card-glow"></div>
+                    <div class="project-card-header">
+                        <div class="project-icon project-icon--ai">
+                            <i data-lucide="bot"></i>
+                        </div>
+                        <span class="project-type">Intelligence Artificielle</span>
+                    </div>
+                    <h3 class="project-title">Chatbot Universitaire</h3>
+                    <p class="project-desc">Agent conversationnel intelligent en IA pour l'assistance aux nouveaux étudiants. Réponses automatisées, compréhension du langage naturel et orientation personnalisée.</p>
+                    <div class="project-tags">
+                        <span>NLP</span><span>Python</span><span>Deep Learning</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card reveal" data-category="ai" id="project-recommandation">
+                    <div class="project-card-glow"></div>
+                    <div class="project-card-header">
+                        <div class="project-icon project-icon--ai">
+                            <i data-lucide="film"></i>
+                        </div>
+                        <span class="project-type">Machine Learning</span>
+                    </div>
+                    <h3 class="project-title">Recommandation de Films</h3>
+                    <p class="project-desc">Système de recommandation hybride combinant filtrage collaboratif et filtrage basé sur le contenu pour suggérer des films personnalisés.</p>
+                    <div class="project-tags">
+                        <span>Machine Learning</span><span>Python</span><span>Filtrage collaboratif</span>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card reveal" data-category="ai" id="project-plaques">
+                    <div class="project-card-glow"></div>
+                    <div class="project-card-header">
+                        <div class="project-icon project-icon--ai">
+                            <i data-lucide="scan-eye"></i>
+                        </div>
+                        <span class="project-type">Deep Learning</span>
+                    </div>
+                    <h3 class="project-title">Détection de Plaques</h3>
+                    <p class="project-desc">Modèle de Deep Learning pour la reconnaissance automatique des plaques d'immatriculation marocaines à partir d'images et de vidéos.</p>
+                    <div class="project-tags">
+                        <span>Deep Learning</span><span>Computer Vision</span><span>Python</span>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card reveal" data-category="ai" id="project-prix-auto">
+                    <div class="project-card-glow"></div>
+                    <div class="project-card-header">
+                        <div class="project-icon project-icon--ai">
+                            <i data-lucide="car"></i>
+                        </div>
+                        <span class="project-type">Machine Learning</span>
+                    </div>
+                    <h3 class="project-title">Prédiction Prix Automobiles</h3>
+                    <p class="project-desc">Modèle prédictif d'estimation de la valeur des véhicules sur le marché automobile, basé sur les caractéristiques techniques et l'historique des ventes.</p>
+                    <div class="project-tags">
+                        <span>Machine Learning</span><span>Python</span><span>Régression</span>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card reveal" data-category="web" id="project-ecommerce">
+                    <div class="project-card-glow"></div>
+                    <div class="project-card-header">
+                        <div class="project-icon project-icon--web">
+                            <i data-lucide="shopping-cart"></i>
+                        </div>
+                        <span class="project-type">Développement Web</span>
+                    </div>
+                    <h3 class="project-title">Plateforme E-commerce</h3>
+                    <p class="project-desc">Site e-commerce complet avec gestion de produits, panier d'achat, système d'authentification et tableau de bord administrateur.</p>
+                    <div class="project-tags">
+                        <span>React JS</span><span>Laravel</span><span>MySQL</span>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card reveal" data-category="web" id="project-location">
+                    <div class="project-card-glow"></div>
+                    <div class="project-card-header">
+                        <div class="project-icon project-icon--web">
+                            <i data-lucide="car-front"></i>
+                        </div>
+                        <span class="project-type">Développement Web</span>
+                    </div>
+                    <h3 class="project-title">Location de Voitures</h3>
+                    <p class="project-desc">Application complète de réservation et gestion de flotte automobile avec interface utilisateur intuitive et panel d'administration.</p>
+                    <div class="project-tags">
+                        <span>React JS</span><span>Laravel</span><span>MySQL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ CONTACT ═══════════════ -->
+    <section class="section section--alt" id="contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag"><i data-lucide="mail"></i> Contact</span>
+                <h2 class="section-title">Travaillons ensemble</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <p class="contact-intro">Vous avez un projet en tête ou souhaitez collaborer ? N'hésitez pas à me contacter via le formulaire ou directement par les canaux ci-dessous.</p>
+
+                    <div class="contact-channels">
+                        <a href="tel:+212684795036" class="contact-channel" id="contactPhone">
+                            <div class="contact-channel-icon">
+                                <i data-lucide="phone"></i>
+                            </div>
+                            <div>
+                                <span class="contact-channel-label">Téléphone</span>
+                                <span class="contact-channel-value">+212 684 795 036</span>
+                            </div>
+                        </a>
+
+                        <a href="mailto:elbaderyayman47@gmail.com" class="contact-channel" id="contactEmail">
+                            <div class="contact-channel-icon">
+                                <i data-lucide="mail"></i>
+                            </div>
+                            <div>
+                                <span class="contact-channel-label">Email</span>
+                                <span class="contact-channel-value">elbaderyayman47@gmail.com</span>
+                            </div>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/aymane-el-badry/" target="_blank" rel="noopener" class="contact-channel" id="contactLinkedin">
+                            <div class="contact-channel-icon">
+                                <i data-lucide="linkedin"></i>
+                            </div>
+                            <div>
+                                <span class="contact-channel-label">LinkedIn</span>
+                                <span class="contact-channel-value">Aymane El Badry</span>
+                            </div>
+                        </a>
+
+                        <a href="#" class="contact-channel" id="contactLocation">
+                            <div class="contact-channel-icon">
+                                <i data-lucide="map-pin"></i>
+                            </div>
+                            <div>
+                                <span class="contact-channel-label">Localisation</span>
+                                <span class="contact-channel-value">Casablanca, Maroc</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <form class="contact-form reveal" id="contactForm">
+                    <div class="form-group">
+                        <label for="formName">Nom complet</label>
+                        <div class="form-input-wrapper">
+                            <i data-lucide="user"></i>
+                            <input type="text" id="formName" name="name" placeholder="Votre nom" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="formEmail">Adresse email</label>
+                        <div class="form-input-wrapper">
+                            <i data-lucide="at-sign"></i>
+                            <input type="email" id="formEmail" name="email" placeholder="votre@email.com" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="formSubject">Sujet</label>
+                        <div class="form-input-wrapper">
+                            <i data-lucide="message-square"></i>
+                            <input type="text" id="formSubject" name="subject" placeholder="Sujet de votre message" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="formMessage">Message</label>
+                        <div class="form-input-wrapper form-input-wrapper--textarea">
+                            <i data-lucide="pen-line"></i>
+                            <textarea id="formMessage" name="message" placeholder="Votre message..." rows="5" required></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full" id="formSubmit">
+                        <i data-lucide="send"></i>
+                        Envoyer le message
+                    </button>
+                    <div class="form-status" id="formStatus"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ FOOTER ═══════════════ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="#hero" class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>AEB<span class="logo-bracket">/&gt;</span>
+                </a>
+                <p class="footer-text">Conçu et développé par <strong>Aymane El Badry</strong> — 2025</p>
+                <div class="footer-socials">
+                    <a href="https://www.linkedin.com/in/aymane-el-badry/" target="_blank" rel="noopener" aria-label="LinkedIn" id="footerLinkedin">
+                        <i data-lucide="linkedin"></i>
+                    </a>
+                    <a href="mailto:elbaderyayman47@gmail.com" aria-label="Email" id="footerEmail">
+                        <i data-lucide="mail"></i>
+                    </a>
+                    <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub" id="footerGithub">
+                        <i data-lucide="github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
